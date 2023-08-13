@@ -1,23 +1,213 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LeaderBoard from './components/leader-board';
 
 function App() {
+  const data = [
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+    {
+      id: 1,
+      name: 'Laura',
+      image: 'https://cdn-icons-png.flaticon.com/512/186/186037.png',
+      level: 16,
+      xp: 100,
+      coins: 500,
+      love: 6,
+      beacons: 2,
+      resources: 70,
+    },
+  ];
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <LeaderBoard items={data}></LeaderBoard>
       </header>
     </div>
   );
